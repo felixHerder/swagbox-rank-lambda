@@ -1,12 +1,19 @@
 'use strict';
+const emojis = [
+  '🥉', '🥈', '🥇', '🌟', '🚀', '🪐', '🌌'
+]
 
 module.exports.rank = async (event) => {
+  const rank = event.queryStringParameters.rank;
+  const rankEmoji = emojis[Math.min(rank, emojis.length - 1)];
   return {
     statusCode: 200,
     body: JSON.stringify(
       {
+        header:
+          { 'Acces-Control-Allow-Origin': '*', },
         message: 'Go Serverless v1.0! Your function executed successfully!',
-        input: event,
+        input: rankEmoji
       },
       null,
       2

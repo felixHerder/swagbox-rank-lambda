@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/freclambda/dev/1629995100986-2021-08-26T16:25:00.986Z/freclambda.zip"
+                "S3Key": "serverless/freclambda/dev/1630053489464-2021-08-27T08:38:09.464Z/freclambda.zip"
               },
               "Handler": "handler.rank",
               "Runtime": "nodejs14.x",
@@ -192,14 +192,14 @@
               "FrecrankLogGroup"
             ]
           },
-          "FrecrankLambdaVersionhQxPdWR9Wuk6SO8GnZY59VCCC2eS2a2mbCiSbdConA8": {
+          "FrecrankLambdaVersionoReZzZSMveOHy1bNLZigFeGr4AcZqg0raIKyxunw": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "FrecrankLambdaFunction"
               },
-              "CodeSha256": "j667Bj7k0E+E61Dpz5JPTvvfSZ9PW1pHHDc8QccvZ/s="
+              "CodeSha256": "AFKHEWC32mAHK+xWPI7L379vzvJpZxeZJ6Xq0Bndlhg="
             }
           },
           "HttpApi": {
@@ -307,7 +307,7 @@
           "FrecrankLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "FrecrankLambdaVersionhQxPdWR9Wuk6SO8GnZY59VCCC2eS2a2mbCiSbdConA8"
+              "Ref": "FrecrankLambdaVersionoReZzZSMveOHy1bNLZigFeGr4AcZqg0raIKyxunw"
             },
             "Export": {
               "Name": "sls-freclambda-dev-FrecrankLambdaFunctionQualifiedArn"
@@ -453,7 +453,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "FrecrankLambdaVersionhQxPdWR9Wuk6SO8GnZY59VCCC2eS2a2mbCiSbdConA8"
+        "versionLogicalId": "FrecrankLambdaVersionoReZzZSMveOHy1bNLZigFeGr4AcZqg0raIKyxunw"
       }
     },
     "configValidationMode": "warn",
@@ -472,10 +472,10 @@
     },
     "layers": {},
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "D:\\Projects\\~React\\facerecog-rank\\.serverless\\freclambda.zip"
+    "artifact": "D:\\Projects\\~React\\facerecog-rank-lambda\\.serverless\\freclambda.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/freclambda/dev/1629995100986-2021-08-26T16:25:00.986Z",
+    "artifactDirectoryName": "serverless/freclambda/dev/1630053489464-2021-08-27T08:38:09.464Z",
     "artifact": "freclambda.zip"
   }
 }
